@@ -1,0 +1,99 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+
+  /* Centering the content of body*/
+body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+  }
+  
+  /* Calculator */
+.calculator {
+    border: 3px solid black;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    box-shadow: 0px 7px 0px 0px rgba(0,0,0,1);
+  }
+  
+  /* Styling on Display/Screen */
+  #screen {
+    width: 100%;
+    font-size: 2rem;
+    height: 80px;
+    border: none;
+    background-color: #252525;
+    color: #fff;
+    text-align: right;
+    padding-right: 20px;
+    padding-left: 10px;
+  }
+  
+  /* Effects on Buttons */
+  button {
+    height: 60px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #c4c4c4;
+    background-color: transparent;
+    font-size: 2rem;
+    color: #333;
+    box-shadow: 0px 6px 0px 0px rgba(0,0,0,1);
+    text-shadow: 0 1px rgba(255,255,255,.4);
+  }
+  
+  /* Active state of Button */
+  button:active {
+    box-shadow: 0px 4px 0px 0px rgba(0,0,0,1);
+    background-color: #eaeaea;
+  }
+  
+  .operator {
+    color: #337cac;
+  }
+  
+  .all-clear {
+    background-color: #f0595f;
+    border-color: #b0353a;
+    color: #fff;
+  }
+  
+  /* Active state of AC */
+  .all-clear:active {
+    background-color: #f17377;
+  }
+  
+  .equal-sign {
+    background-color: #2e86c0;
+    border-color: #337cac;
+    color: #fff;
+  }
+  
+  /* Active state of =  */
+  .equal-sign:active {
+    background-color: #4e9ed4;
+  }
+  
+  /* CSS Grid to create a grid layout with 4 columns of equal width */
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    padding: 15px;
+  }
+  
+  .equal-sign {
+    background-color: #2e86c0;
+    border-color: #337cac;
+    color: #fff;
+    height: 100%;
+  }
